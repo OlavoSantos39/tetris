@@ -1,0 +1,66 @@
+@media screen and (max-width: 600px) {
+  header {
+    padding: 8px 0;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  .game-container {
+    padding: 5px 0;
+  }
+
+  .info-bar {
+    max-width: 240px;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  /* Reduz ligeiramente o canvas em telas muito compactas para caber perfeitamente */
+  canvas {
+    width: 210px !important;
+    height: 350px !important;
+  }
+
+  .controls {
+    max-width: 100%;
+    padding: 10px 15px;
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 14px 0;
+    font-size: 1.15rem;
+    border-radius: 12px;
+  }
+}
+
+/* Telas extremamente estreitas (ex: celulares antigos abaixo de 360px de largura) */
+@media screen and (max-width: 360px) {
+  canvas {
+    width: 180px !important;
+    height: 300px !important;
+  }
+
+  .btn {
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
+
+/* Telas maiores (Tablets e Computadores acima de 600px) */
+@media screen and (min-width: 601px) {
+  body {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .game-container {
+    flex-grow: 0;
+  }
+
+  .controls {
+    max-width: 380px;
+  }
+}
